@@ -1,5 +1,7 @@
 ## Программа для расчета хэшкода субдиректорий на основании размещенных в них файлов (1 уровень вложенности)
 
+![Java](https://img.shields.io/badge/-Java-05122A?style=flat&logo=Java&logoColor=FFA518) ![JavaFX](https://img.shields.io/badge/-JavaFX-05122A?style=flat&logo=JavaFX) ![File](https://img.shields.io/badge/-File-05122A?style=flat&logo=File) ![Hashcode](https://img.shields.io/badge/-Hashcode-05122A?style=Hashcode) ![CSV](https://img.shields.io/badge/-CSV-05122A?style=flat&logo=csv&logoColor=fffffb) ![Concurrent](https://img.shields.io/badge/-Concurrent-05122A?style=flat&logo=Concurrent&logoColor=fffffb)
+
 ![Скриншот gui](appScreen.png)
 
 ### Использованные технологии:
