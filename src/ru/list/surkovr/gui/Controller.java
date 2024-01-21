@@ -89,13 +89,5 @@ public class Controller {
                 fieldMsg.appendText("Требуется сгенерировать хэшкоды и экспортировать результаты\n");
             }
         });
-
-//        btnOpen.setOnAction(e -> {
-//            if (isResultWritten) {
-//
-//            }
-//
-//
-//        });
     }
 }

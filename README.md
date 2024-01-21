@@ -1,28 +1,24 @@
-## Программа для расчета хэшкода субдиректорий на основании размещенных в них файлов (1 уровень вложенности)
+## Program for calculating the hash code of subdirectories based on the files placed in them (1 level of nesting)
 
 ![Java](https://img.shields.io/badge/-Java-05122A?style=flat&logo=Java&logoColor=FFA518) ![JavaFX](https://img.shields.io/badge/-JavaFX-05122A?style=flat&logo=JavaFX) ![File](https://img.shields.io/badge/-File-05122A?style=flat&logo=File) ![Hashcode](https://img.shields.io/badge/-Hashcode-05122A?style=Hashcode) ![CSV](https://img.shields.io/badge/-CSV-05122A?style=flat&logo=csv&logoColor=fffffb) ![Concurrent](https://img.shields.io/badge/-Concurrent-05122A?style=flat&logo=Concurrent&logoColor=fffffb)
 
-![Скриншот gui](appScreen.png)
+![Gui screenshot](appScreen.png)
 
-### Использованные технологии:
+### Technologies used
 * Java 11 (Concurrent, Stream API, IO, NIO);
 * JavaFX (GUI);
 
-### Алгоритм работы:
+### Operating algorithm:
 
-* На вход подается корневая директория для подпапок которой требуется определить хэшкод.
+* The root directory for which subdirectories are required to determine the hash code is entered as input.
 
-* Затем после нажатия кнопки Generate, программа находит внутри все поддиректории содержащие файлы (на один уровень), файлы корневой директории игнорируются.
- Создается очередь из объектов. Генерируется хэшкод в несколько потоков (в зависимости от количества ядер процессора) 
-для каждой подпапки с файлами. Результат запоминается в очередь.
+* Then, after clicking the Generate button, the program finds all subdirectories containing files inside (at one level), files of the root directory are ignored. A queue of objects is created. The hash code is generated in multiple threads (depending on the number of processor cores) for each subfolder with files. The result is stored in the queue.
 
-* После получения всех результатов, при нажатии кнопки Export производит запись в файл в формате csv 
-(путь и имя файла задается в поле ввода).
+* After obtaining all the results, clicking the Export button writes to a file in csv format (the path and file name are entered in the input field).
 
-* При нажатии кнопки Open происходит открытие файла.
+* Clicking the Open button opens the file.
 
+* p.s. The program is based on the task below, but the exact task parameters are unknown (algorithm, file structure, profiles):
 
-p.s. Программа на основании задания ниже, но точные параметры задания не известны (алгоритм, структура файлов, профайлы):
-
-![Скриншот задания](HashTask.png)
+![Task screenshot](HashTask.png)
 
